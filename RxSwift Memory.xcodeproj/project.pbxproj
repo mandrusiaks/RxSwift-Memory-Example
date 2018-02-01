@@ -12,6 +12,12 @@
 		92E66FBD20239BD9002C22C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E66FBB20239BD9002C22C3 /* Main.storyboard */; };
 		92E66FBF20239BD9002C22C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92E66FBE20239BD9002C22C3 /* Assets.xcassets */; };
 		92E66FC220239BD9002C22C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E66FC020239BD9002C22C3 /* LaunchScreen.storyboard */; };
+		92E66FCE20239EB0002C22C3 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E66FCB20239EB0002C22C3 /* RxBlocking.framework */; };
+		92E66FCF20239EB0002C22C3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E66FCC20239EB0002C22C3 /* RxSwift.framework */; };
+		92E66FD020239EB0002C22C3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E66FCD20239EB0002C22C3 /* RxCocoa.framework */; };
+		92E66FD22023A004002C22C3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E66FD12023A004002C22C3 /* SecondViewController.swift */; };
+		92E66FD62023A031002C22C3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E66FD52023A031002C22C3 /* ViewModel.swift */; };
+		92E66FD82023A038002C22C3 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E66FD72023A038002C22C3 /* SecondViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		92E66FBE20239BD9002C22C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92E66FC120239BD9002C22C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92E66FC320239BD9002C22C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E66FCB20239EB0002C22C3 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		92E66FCC20239EB0002C22C3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		92E66FCD20239EB0002C22C3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		92E66FD12023A004002C22C3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		92E66FD52023A031002C22C3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		92E66FD72023A038002C22C3 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E66FCE20239EB0002C22C3 /* RxBlocking.framework in Frameworks */,
+				92E66FCF20239EB0002C22C3 /* RxSwift.framework in Frameworks */,
+				92E66FD020239EB0002C22C3 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,7 @@
 			children = (
 				92E66FB620239BD9002C22C3 /* RxSwift Memory */,
 				92E66FB520239BD9002C22C3 /* Products */,
+				92E66FCA20239EB0002C22C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +71,50 @@
 			isa = PBXGroup;
 			children = (
 				92E66FB720239BD9002C22C3 /* AppDelegate.swift */,
-				92E66FB920239BD9002C22C3 /* ViewController.swift */,
+				92E66FD92023A6D7002C22C3 /* Resources */,
+				92E66FD32023A012002C22C3 /* ViewController */,
+				92E66FD42023A018002C22C3 /* SecondViewController */,
 				92E66FBB20239BD9002C22C3 /* Main.storyboard */,
+			);
+			path = "RxSwift Memory";
+			sourceTree = "<group>";
+		};
+		92E66FCA20239EB0002C22C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92E66FCB20239EB0002C22C3 /* RxBlocking.framework */,
+				92E66FCD20239EB0002C22C3 /* RxCocoa.framework */,
+				92E66FCC20239EB0002C22C3 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92E66FD32023A012002C22C3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				92E66FB920239BD9002C22C3 /* ViewController.swift */,
+				92E66FD52023A031002C22C3 /* ViewModel.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		92E66FD42023A018002C22C3 /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				92E66FD12023A004002C22C3 /* SecondViewController.swift */,
+				92E66FD72023A038002C22C3 /* SecondViewModel.swift */,
+			);
+			path = SecondViewController;
+			sourceTree = "<group>";
+		};
+		92E66FD92023A6D7002C22C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				92E66FBE20239BD9002C22C3 /* Assets.xcassets */,
 				92E66FC020239BD9002C22C3 /* LaunchScreen.storyboard */,
 				92E66FC320239BD9002C22C3 /* Info.plist */,
 			);
-			path = "RxSwift Memory";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +127,7 @@
 				92E66FB020239BD9002C22C3 /* Sources */,
 				92E66FB120239BD9002C22C3 /* Frameworks */,
 				92E66FB220239BD9002C22C3 /* Resources */,
+				92E66FC920239E1B002C22C3 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -131,12 +185,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92E66FC920239E1B002C22C3 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92E66FB020239BD9002C22C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E66FD22023A004002C22C3 /* SecondViewController.swift in Sources */,
 				92E66FBA20239BD9002C22C3 /* ViewController.swift in Sources */,
+				92E66FD62023A031002C22C3 /* ViewModel.swift in Sources */,
+				92E66FD82023A038002C22C3 /* SecondViewModel.swift in Sources */,
 				92E66FB820239BD9002C22C3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +353,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQVW3243Q5;
-				INFOPLIST_FILE = "RxSwift Memory/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/RxSwift Memory/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.RxSwift-Memory";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +373,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZQVW3243Q5;
-				INFOPLIST_FILE = "RxSwift Memory/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/RxSwift Memory/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.RxSwift-Memory";
 				PRODUCT_NAME = "$(TARGET_NAME)";
